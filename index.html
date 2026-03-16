@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio Saya</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- FOTO PROFIL -->
+    <div class="profile">
+        <img src="img/profile.jpg">
+    </div>
+
+    <!-- CARD KIRI -->
+    <div class="card left">
+        <h2>Tentang Saya</h2>
+        <p>
+        Saya adalah kreator digital yang fokus pada editing, fotografi,
+        dan pengembangan website.
+        </p>
+    </div>
+
+    <!-- CARD KANAN -->
+    <div class="card right">
+        <h2>Perkenalan</h2>
+        <p>
+        Saya suka membuat karya visual dan teknologi.
+        </p>
+    </div>
+
+</div>
+
+<!-- SKILL -->
+<div class="skills">
+
+    <div class="skill" onclick="openPopup('edit')">
+        🎬 Editing
+    </div>
+
+    <div class="skill" onclick="openPopup('photo')">
+        📷 Fotografi
+    </div>
+
+    <div class="skill" onclick="openPopup('coding')">
+        💻 Coding
+    </div>
+
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+
+    <span class="close" onclick="closePopup()">✖</span>
+
+    <div id="popup-content"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
